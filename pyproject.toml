@@ -4,4 +4,20 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "backend",
+    "python-dotenv",
+    "pytest"
+]
+
+[tool.uv.sources]
+backend = { workspace = true }
+
+[tool.uv.workspace]
+members = [ "packages/*" ]
+
+[tool.pytest.ini_options]
+pythonpath = [
+    "packages/backend",
+    "packages/assistant"
+]
