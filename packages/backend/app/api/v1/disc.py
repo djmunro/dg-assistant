@@ -1,9 +1,9 @@
-from fastapi import APIRouter, Depends, HTTPException
 from typing import List
 
 from app.db.schema import SessionLocal
 from app.models.disc import DiscCreate, DiscRead
 from app.services.disc_service import DiscService
+from fastapi import APIRouter, Depends, HTTPException
 
 router = APIRouter()
 
