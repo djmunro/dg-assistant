@@ -8,5 +8,6 @@ dependencies = [
     "uvicorn",
     "pydantic-settings",
     "sqlalchemy",
-    "httpx"
+    "httpx",
+    "psycopg2-binary"
 ]
