@@ -2,4 +2,9 @@
 name = "assistant"
 version = "0.1.0"
 description = ""
-dependencies = []
+dependencies = [
+    "pydantic",
+    "pydantic-ai",
+    "anthropic",
+    "httpx",
+]
